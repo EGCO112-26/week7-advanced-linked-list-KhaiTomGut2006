@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main(void) {
+  setbuf(stdout, NULL);
   LLPtr startPtr = NULL;
   unsigned int choice;
   int id;
