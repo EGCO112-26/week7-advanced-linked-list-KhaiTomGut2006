@@ -161,11 +161,14 @@ void printList( LLPtr currentPtr )
 void clearList( LLPtr *sPtr )
 {
    LLPtr tempPtr;
-
-   while ( *sPtr != NULL ) {
-      tempPtr = *sPtr;
-      *sPtr = ( *sPtr )->nextPtr;
-      printf( "delete %d\n", tempPtr->id );
-      free( tempPtr );
+   
+   if( *sPtr != NULL ){
+       printf("Clear all nodes\n");
+       while ( *sPtr != NULL ) {
+          tempPtr = *sPtr;
+          *sPtr = ( *sPtr )->nextPtr;
+          printf( "delete %d\n", tempPtr->id );
+          free( tempPtr );
+       }
    }
 }
