@@ -109,7 +109,7 @@ void printList(LLPtr currentPtr) {
   LLPtr tempPtr;
 
   if (isEmpty(currentPtr)) {
-    puts("List is empty.\n");
+    puts("List is empty.");
   } else {
     puts("The list is:");
 
@@ -122,9 +122,9 @@ void printList(LLPtr currentPtr) {
     while (tempPtr != NULL) {
       printf("%d %s", tempPtr->id, tempPtr->name);
       if (tempPtr->nextPtr != NULL) {
-        printf(" --> ");
+        printf(" -->");
       } else {
-        printf(" --> NULL");
+        printf(" -->NULL");
       }
       tempPtr = tempPtr->nextPtr;
     }
@@ -134,9 +134,9 @@ void printList(LLPtr currentPtr) {
     while (tempPtr != NULL) {
       printf("%d %s", tempPtr->id, tempPtr->name);
       if (tempPtr->prevPtr != NULL) {
-        printf(" --> ");
+        printf(" -->");
       } else {
-        printf(" --> NULL");
+        printf(" -->NULL");
       }
       tempPtr = tempPtr->prevPtr;
     }

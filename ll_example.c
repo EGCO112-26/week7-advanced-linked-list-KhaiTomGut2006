@@ -33,7 +33,7 @@ int main(void) {
           printf("%d not found.\n\n", id);
         }
       } else {
-        puts("List is empty.\n");
+        puts("List is empty.");
       }
       break;
     default:
